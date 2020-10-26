@@ -1,7 +1,8 @@
-package com.dsckiet.helpvault
+package com.dsckiet.helpvault.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.dsckiet.helpvault.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
