@@ -1,5 +1,4 @@
 ### To contribute to this project, please follow the below mentioned Commit Message Guidelines.
-your PR will not be merged into Head repository.
 1. For adding any file => "Added - message/file name"
 2. For modifying UI => "Updated - message/file name UI"
 3. For functionality => "Updated - message/file name screen"
