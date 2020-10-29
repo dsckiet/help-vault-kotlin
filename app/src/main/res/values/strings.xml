@@ -24,4 +24,12 @@
     <string name="within_1kms">within 1kms.</string>
     <string name="view_more">View More</string>
     <string name="recently_helped">Recently Helped</string>
+    <string name="my_help_requests">My Help Requests</string>
+    <string name="help_requests_and_history">Help requests and history</string>
+    <string name="open_requests">Open Requests</string>
+    <string name="_16th_oct">16th Oct.</string>
+    <string name="baby_sitting_for_2">Baby Sitting for 2</string>
+    <string name="_1_of_2_people_available">1 of 2 people available</string>
+    <string name="no_specific_requirements">No specific requirements</string>
+    <string name="closed_requests">Closed Requests</string>
 </resources>

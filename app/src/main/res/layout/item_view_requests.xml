@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    android:layout_marginTop="@dimen/dimen_8">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="@dimen/dimen_54"
+            android:layout_height="@dimen/dimen_54"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_icon_clock"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_16th_oct"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/google_sans_medium"
+            android:textSize="@dimen/dimen_text_16"
+            android:textColor="#006DC2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#8C929E"
+            android:text="@string/baby_sitting_for_2"
+            android:fontFamily="@font/google_sans_bold"
+            android:textSize="@dimen/dimen_text_20"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#8C929E"
+            android:text="@string/_1_of_2_people_available"
+            android:fontFamily="@font/google_sans_regular"
+            android:textSize="@dimen/dimen_text_16"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#8C929E"
+            android:text="@string/no_specific_requirements"
+            android:fontFamily="@font/google_sans_regular"
+            android:textSize="@dimen/dimen_text_16"/>
+    </LinearLayout>
+
+</LinearLayout>
