@@ -18,4 +18,10 @@
     <string name="bio_details">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
     <string name="redeem_credits">Redeem Credits</string>
     <string name="redeem_big">Get your credits encashed for \nexclusive stuff</string>
+    <string name="_4_7">4.7</string>
+    <string name="help_wanted">Help Wanted</string>
+    <string name="anonymous">Anonymous</string>
+    <string name="within_1kms">within 1kms.</string>
+    <string name="view_more">View More</string>
+    <string name="recently_helped">Recently Helped</string>
 </resources>
