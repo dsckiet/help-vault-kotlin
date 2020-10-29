@@ -5,4 +5,17 @@
     <string name="home">Home</string>
     <string name="helps">Helps</string>
     <string name="profile">Profile</string>
+    <string name="edit_and_manage_your_profile_details">Edit and manage your profile details</string>
+    <string name="mike_tyson">Mike Tyson</string>
+    <string name="art_director_at_mx_studios">Art director at MX Studios</string>
+    <string name="_78">78</string>
+    <string name="credits">Credits</string>
+    <string name="_4_3">4.3</string>
+    <string name="rating">Rating</string>
+    <string name="_28">28</string>
+    <string name="volunteered">Volunteered</string>
+    <string name="bio">Bio</string>
+    <string name="bio_details">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+    <string name="redeem_credits">Redeem Credits</string>
+    <string name="redeem_big">Get your credits encashed for \nexclusive stuff</string>
 </resources>

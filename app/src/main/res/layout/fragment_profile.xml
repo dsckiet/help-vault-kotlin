@@ -1,10 +1,264 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         tools:context=".view.ProfileFragment">
 
-    </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/google_sans_bold"
+            android:paddingLeft="@dimen/dimen_32"
+            android:paddingTop="@dimen/dimen_32"
+            android:paddingRight="@dimen/dimen_32"
+            android:text="@string/profile"
+            android:textColor="#006DC2"
+            android:textSize="@dimen/dimen_text_32" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/google_sans_medium"
+            android:paddingLeft="@dimen/dimen_32"
+            android:paddingRight="@dimen/dimen_32"
+            android:text="@string/edit_and_manage_your_profile_details"
+            android:textColor="#C6C6C6"
+            android:textSize="@dimen/dimen_text_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_94"
+                android:layout_height="@dimen/dimen_94"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dimen_32"
+                android:src="@drawable/ic_profile_placeholder" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dimen_24"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/google_sans_bold"
+                    android:text="@string/mike_tyson"
+                    android:textColor="#006DC2"
+                    android:textSize="@dimen/dimen_text_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/google_sans_bold"
+                    android:text="@string/art_director_at_mx_studios"
+                    android:textColor="#8C929E"
+                    android:textSize="@dimen/dimen_text_16" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dimen_36"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/google_sans_bold"
+                    android:text="@string/_78"
+                    android:textColor="#006DC2"
+                    android:textSize="@dimen/dimen_text_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/google_sans_medium"
+                    android:text="@string/credits"
+                    android:textColor="#006DC2"
+                    android:textSize="@dimen/dimen_text_14" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/dimen_2"
+                android:layout_height="@dimen/dimen_56"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dimen_12"
+                android:layout_marginEnd="@dimen/dimen_12"
+                android:background="#006DC2" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/google_sans_bold"
+                    android:text="@string/_4_3"
+                    android:textColor="#006DC2"
+                    android:textSize="@dimen/dimen_text_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/google_sans_medium"
+                    android:text="@string/rating"
+                    android:textColor="#006DC2"
+                    android:textSize="@dimen/dimen_text_14" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/dimen_2"
+                android:layout_height="@dimen/dimen_56"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dimen_12"
+                android:layout_marginEnd="@dimen/dimen_12"
+                android:background="#006DC2" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/dimen_36"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/google_sans_bold"
+                    android:text="@string/_28"
+                    android:textColor="#006DC2"
+                    android:textSize="@dimen/dimen_text_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/google_sans_medium"
+                    android:text="@string/volunteered"
+                    android:textColor="#006DC2"
+                    android:textSize="@dimen/dimen_text_14" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_32"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/google_sans_bold"
+                android:text="@string/bio"
+                android:textColor="#006DC2"
+                android:textSize="@dimen/dimen_text_20" />
+
+            <ImageView
+                android:layout_width="@dimen/dimen_20"
+                android:layout_height="@dimen/dimen_20"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dimen_12"
+                android:src="@drawable/ic_icon_edit_bio" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_32"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:layout_marginEnd="@dimen/dimen_32"
+            android:fontFamily="@font/google_sans_regular"
+            android:text="@string/bio_details"
+            android:textColor="#8C929E"
+            android:textSize="@dimen/dimen_text_16" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_32"
+            android:layout_marginTop="@dimen/dimen_36"
+            android:layout_marginEnd="@dimen/dimen_32"
+            app:cardBackgroundColor="#006DC2"
+            app:cardCornerRadius="@dimen/dimen_8">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/google_sans_bold"
+                        android:paddingStart="@dimen/dimen_16"
+                        android:paddingTop="@dimen/dimen_8"
+                        android:paddingEnd="@dimen/dimen_16"
+                        android:text="@string/redeem_credits"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/google_sans_medium"
+                        android:paddingStart="@dimen/dimen_16"
+                        android:paddingTop="@dimen/dimen_2"
+                        android:paddingEnd="@dimen/dimen_16"
+                        android:paddingBottom="@dimen/dimen_12"
+                        android:text="@string/redeem_big"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/dimen_text_12" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/dimen_16"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_icon_reward" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
 </layout>
