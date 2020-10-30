@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".view.HelpRequestsFragment">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_32"
+            android:paddingTop="@dimen/dimen_32"
+            android:paddingRight="@dimen/dimen_32"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/dimen_24"
+                android:layout_height="@dimen/dimen_24"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_icon_back"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_8"
+                android:fontFamily="@font/google_sans_bold"
+                android:text="@string/get_volunteers"
+                android:textColor="#006DC2"
+                android:textSize="@dimen/dimen_text_32" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/google_sans_medium"
+            android:paddingLeft="@dimen/dimen_32"
+            android:paddingRight="@dimen/dimen_32"
+            android:text="@string/give_a_brief_description_about_your_help"
+            android:textColor="#C6C6C6"
+            android:textSize="@dimen/dimen_text_14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/google_sans_bold"
+            android:paddingLeft="@dimen/dimen_32"
+            android:paddingTop="@dimen/dimen_32"
+            android:paddingRight="@dimen/dimen_32"
+            android:text="@string/title"
+            android:textColor="#006DC2"
+            android:textSize="@dimen/dimen_text_20" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/dimen_32"
+            android:layout_marginEnd="@dimen/dimen_32"
+            android:layout_height="@dimen/dimen_50">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+</layout>

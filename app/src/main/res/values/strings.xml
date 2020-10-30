@@ -33,4 +33,8 @@
     <string name="no_specific_requirements">No specific requirements</string>
     <string name="closed_requests">Closed Requests</string>
     <string name="add_requests">add requests</string>
+    <string name="get_volunteers">Get Volunteers</string>
+    <string name="give_a_brief_description_about_your_help">Give a brief description about your help</string>
+    <string name="title">Title</string>
+    <string name="this_will_be_visible_to_others">This will be visible to others</string>
 </resources>
