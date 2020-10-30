@@ -47,7 +47,7 @@
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/dimen_2"
+                android:layout_height="@dimen/dimen_1"
                 android:layout_marginStart="@dimen/dimen_32"
                 android:layout_marginEnd="@dimen/dimen_32"
                 android:layout_marginBottom="@dimen/dimen_8"
@@ -73,7 +73,7 @@
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/dimen_2"
+                android:layout_height="@dimen/dimen_1"
                 android:layout_marginStart="@dimen/dimen_32"
                 android:layout_marginEnd="@dimen/dimen_32"
                 android:layout_marginBottom="@dimen/dimen_8"
