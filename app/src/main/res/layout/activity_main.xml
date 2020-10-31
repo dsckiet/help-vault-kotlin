@@ -15,13 +15,13 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:defaultNavHost="true"
-            app:navGraph="@navigation/navigation"/>
+            app:navGraph="@navigation/navigation" />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom_nav"
             android:layout_width="match_parent"
             android:layout_height="64dp"
             android:layout_marginTop="-64dp"
-            app:menu="@menu/nav_menu"/>
+            app:menu="@menu/nav_menu" />
     </LinearLayout>
 </layout>

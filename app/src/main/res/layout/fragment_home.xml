@@ -1,164 +1,170 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:context=".view.HomeFragment">
+        android:layout_marginBottom="@dimen/dimen_64">
 
-        <LinearLayout
+        <LinearLayout xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dimen_20"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="@dimen/dimen_94"
-                android:layout_height="@dimen/dimen_94"
-                android:layout_gravity="center_vertical"
-                android:layout_marginStart="@dimen/dimen_32"
-                android:src="@drawable/ic_profile_placeholder" />
+            android:orientation="vertical"
+            tools:context=".view.HomeFragment">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginStart="@dimen/dimen_24"
-                android:orientation="vertical">
+                android:layout_marginTop="@dimen/dimen_20"
+                android:orientation="horizontal">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/google_sans_bold"
-                    android:text="@string/mike_tyson"
-                    android:textColor="#006DC2"
-                    android:textSize="@dimen/dimen_text_24" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/google_sans_bold"
-                    android:text="@string/art_director_at_mx_studios"
-                    android:textColor="#8C929E"
-                    android:textSize="@dimen/dimen_text_16" />
+                <ImageView
+                    android:layout_width="@dimen/dimen_94"
+                    android:layout_height="@dimen/dimen_94"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/dimen_32"
+                    android:src="@drawable/ic_profile_placeholder" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/dimen_24"
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/google_sans_bold"
-                        android:text="@string/_4_7"
+                        android:text="@string/mike_tyson"
                         android:textColor="#006DC2"
+                        android:textSize="@dimen/dimen_text_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/google_sans_bold"
+                        android:text="@string/art_director_at_mx_studios"
+                        android:textColor="#8C929E"
                         android:textSize="@dimen/dimen_text_16" />
 
-                    <ImageView
-                        android:layout_width="@dimen/dimen_16"
-                        android:layout_height="@dimen/dimen_16"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginStart="@dimen/dimen_4"
-                        android:src="@drawable/ic_icon_star" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/google_sans_bold"
+                            android:text="@string/_4_7"
+                            android:textColor="#006DC2"
+                            android:textSize="@dimen/dimen_text_16" />
+
+                        <ImageView
+                            android:layout_width="@dimen/dimen_16"
+                            android:layout_height="@dimen/dimen_16"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/dimen_4"
+                            android:src="@drawable/ic_icon_star" />
+                    </LinearLayout>
+
                 </LinearLayout>
-
             </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_32"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:fontFamily="@font/google_sans_bold"
+                android:text="@string/help_wanted"
+                android:textColor="#006DC2"
+                android:textSize="@dimen/dimen_text_24" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1"
+                android:layout_marginStart="@dimen/dimen_32"
+                android:layout_marginEnd="@dimen/dimen_32"
+                android:layout_marginBottom="@dimen/dimen_8"
+                android:background="#E1E1E1" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_32"
+                android:layout_marginEnd="@dimen/dimen_32"
+                tools:itemCount="3"
+                tools:listitem="@layout/item_view" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_32"
+                android:layout_marginTop="@dimen/dimen_16"
+                app:strokeColor="#006DC2"
+                app:strokeWidth="@dimen/dimen_1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/google_sans_medium"
+                    android:paddingLeft="@dimen/dimen_12"
+                    android:paddingTop="@dimen/dimen_8"
+                    android:paddingRight="@dimen/dimen_12"
+                    android:paddingBottom="@dimen/dimen_8"
+                    android:text="@string/view_more"
+                    android:textColor="#006DC2" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_32"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:fontFamily="@font/google_sans_bold"
+                android:text="@string/recently_helped"
+                android:textColor="#006DC2"
+                android:textSize="@dimen/dimen_text_24" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1"
+                android:layout_marginStart="@dimen/dimen_32"
+                android:layout_marginEnd="@dimen/dimen_32"
+                android:layout_marginBottom="@dimen/dimen_8"
+                android:background="#E1E1E1" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_32"
+                android:layout_marginEnd="@dimen/dimen_32"
+                tools:itemCount="3"
+                tools:listitem="@layout/item_view" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_32"
+                android:layout_marginTop="@dimen/dimen_16"
+                app:strokeColor="#006DC2"
+                app:strokeWidth="@dimen/dimen_1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/google_sans_medium"
+                    android:paddingLeft="@dimen/dimen_12"
+                    android:paddingTop="@dimen/dimen_8"
+                    android:paddingRight="@dimen/dimen_12"
+                    android:paddingBottom="@dimen/dimen_8"
+                    android:text="@string/view_more"
+                    android:textColor="#006DC2" />
+            </com.google.android.material.card.MaterialCardView>
+
         </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/dimen_32"
-            android:layout_marginTop="@dimen/dimen_16"
-            android:fontFamily="@font/google_sans_bold"
-            android:text="@string/help_wanted"
-            android:textColor="#006DC2"
-            android:textSize="@dimen/dimen_text_24" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/dimen_2"
-            android:layout_marginStart="@dimen/dimen_32"
-            android:layout_marginEnd="@dimen/dimen_32"
-            android:layout_marginBottom="@dimen/dimen_8"
-            android:background="#E1E1E1" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/dimen_32"
-            android:layout_marginEnd="@dimen/dimen_32"
-            tools:itemCount="3"
-            tools:listitem="@layout/item_view" />
-
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/dimen_32"
-            android:layout_marginTop="@dimen/dimen_16"
-            app:strokeColor="#006DC2"
-            app:strokeWidth="@dimen/dimen_1">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/google_sans_medium"
-                android:paddingLeft="@dimen/dimen_12"
-                android:paddingTop="@dimen/dimen_8"
-                android:paddingRight="@dimen/dimen_12"
-                android:paddingBottom="@dimen/dimen_8"
-                android:text="@string/view_more"
-                android:textColor="#006DC2" />
-        </com.google.android.material.card.MaterialCardView>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/dimen_32"
-            android:layout_marginTop="@dimen/dimen_16"
-            android:fontFamily="@font/google_sans_bold"
-            android:text="@string/recently_helped"
-            android:textColor="#006DC2"
-            android:textSize="@dimen/dimen_text_24" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/dimen_2"
-            android:layout_marginStart="@dimen/dimen_32"
-            android:layout_marginEnd="@dimen/dimen_32"
-            android:layout_marginBottom="@dimen/dimen_8"
-            android:background="#E1E1E1" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/dimen_32"
-            android:layout_marginEnd="@dimen/dimen_32"
-            tools:itemCount="3"
-            tools:listitem="@layout/item_view" />
-
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/dimen_32"
-            android:layout_marginTop="@dimen/dimen_16"
-            app:strokeColor="#006DC2"
-            app:strokeWidth="@dimen/dimen_1">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/google_sans_medium"
-                android:paddingLeft="@dimen/dimen_12"
-                android:paddingTop="@dimen/dimen_8"
-                android:paddingRight="@dimen/dimen_12"
-                android:paddingBottom="@dimen/dimen_8"
-                android:text="@string/view_more"
-                android:textColor="#006DC2" />
-        </com.google.android.material.card.MaterialCardView>
-
-    </LinearLayout>
+    </ScrollView>
 </layout>

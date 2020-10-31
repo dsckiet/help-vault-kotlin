@@ -33,4 +33,26 @@
     <string name="no_specific_requirements">No specific requirements</string>
     <string name="closed_requests">Closed Requests</string>
     <string name="add_requests">add requests</string>
+    <string name="get_volunteers">Get Volunteers</string>
+    <string name="give_a_brief_description_about_your_help">Give a brief description about your help</string>
+    <string name="title">Title</string>
+    <string name="title_helper">This will be visible to others</string>
+    <string name="title_hint">A suitable title for your help</string>
+    <string name="desc_help">Give a brief description for your help</string>
+    <string name="description">Description</string>
+    <string name="volunteers_needed">Volunteers needed</string>
+    <string name="for_kids">For kids</string>
+    <string name="reveal_identity">Reveal Identity</string>
+    <string name="get_help">Get Help</string>
+    <string name="by_clicking_you_agree_to_the_terms_and_conditions_of_this_app">By clicking, you agree to the Terms and Conditions of this app</string>
+    <string name="help_description">Help Description</string>
+    <string name="syringe_detoxil_2ml_pyrol_2mg_x2">Syringe, Detoxil 2ml, Pyrol 2mg x2</string>
+    <string name="time">Time</string>
+    <string name="_3_pm">3 PM</string>
+    <string name="people_needed">People Needed</string>
+    <string name="_2">2</string>
+    <string name="specific_requirements">Specific Requirements</string>
+    <string name="address">Address</string>
+    <string name="_2349_5a_anand_vihar_delhi">2349/5A, Anand Vihar, Delhi</string>
+    <string name="volunteer">Volunteer</string>
 </resources>

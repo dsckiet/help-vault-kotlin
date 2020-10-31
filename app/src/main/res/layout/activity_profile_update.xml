@@ -199,8 +199,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="About me"
-                        android:minHeight="80dp"
                         android:inputType="textEmailAddress"
+                        android:minHeight="80dp"
                         android:textSize="@dimen/dimen_text_16" />
 
                 </com.google.android.material.textfield.TextInputLayout>
