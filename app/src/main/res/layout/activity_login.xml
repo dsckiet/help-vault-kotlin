@@ -54,14 +54,14 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/dimen_4"
 
+                    android:backgroundTint="@color/colorPrimary"
                     app:boxCornerRadiusBottomEnd="@dimen/dimen_8"
                     app:boxCornerRadiusBottomStart="@dimen/dimen_8"
                     app:boxCornerRadiusTopEnd="@dimen/dimen_8"
                     app:boxCornerRadiusTopStart="@dimen/dimen_8"
                     app:boxStrokeColor="@color/colorPrimary"
-                    app:startIconTint="@color/colorPrimary"
-                    android:backgroundTint="@color/colorPrimary"
-                    app:startIconDrawable="@drawable/ic_icon_ionic_md_person">
+                    app:startIconDrawable="@drawable/ic_icon_ionic_md_person"
+                    app:startIconTint="@color/colorPrimary">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/username_input"
@@ -79,27 +79,26 @@
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:startIconTint="@color/colorPrimary"
                     android:layout_marginTop="@dimen/dimen_4"
                     app:boxCornerRadiusBottomEnd="@dimen/dimen_8"
                     app:boxCornerRadiusBottomStart="@dimen/dimen_8"
                     app:boxCornerRadiusTopEnd="@dimen/dimen_8"
-
                     app:boxCornerRadiusTopStart="@dimen/dimen_8"
+
                     app:boxStrokeColor="@color/colorPrimary"
-                    app:startIconDrawable="@drawable/ic_icon_awesome_unlock">
+                    app:startIconDrawable="@drawable/ic_icon_awesome_unlock"
+                    app:startIconTint="@color/colorPrimary">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/username_password"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Password"
-                        app:startIconTint="@color/colorPrimary"
                         android:inputType="textEmailAddress"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="@dimen/dimen_text_16" />
+                        android:textSize="@dimen/dimen_text_16"
+                        app:startIconTint="@color/colorPrimary" />
                 </com.google.android.material.textfield.TextInputLayout>
-
 
 
                 <com.google.android.material.button.MaterialButton
