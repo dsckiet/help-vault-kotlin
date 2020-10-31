@@ -8,86 +8,90 @@
         android:layout_height="match_parent"
         android:layout_marginBottom="64dp">
 
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            tools:context=".view.HelpsFragment">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/google_sans_bold"
-                android:paddingLeft="@dimen/dimen_32"
-                android:paddingTop="@dimen/dimen_32"
-                android:paddingRight="@dimen/dimen_32"
-                android:text="@string/my_help_requests"
-                android:textColor="#006DC2"
-                android:textSize="@dimen/dimen_text_32" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/google_sans_medium"
-                android:paddingLeft="@dimen/dimen_32"
-                android:paddingRight="@dimen/dimen_32"
-                android:text="@string/help_requests_and_history"
-                android:textColor="#C6C6C6"
-                android:textSize="@dimen/dimen_text_14" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/dimen_32"
-                android:layout_marginTop="@dimen/dimen_16"
-                android:fontFamily="@font/google_sans_bold"
-                android:text="@string/open_requests"
-                android:textColor="#006DC2"
-                android:textSize="@dimen/dimen_text_24" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/dimen_1"
-                android:layout_marginStart="@dimen/dimen_32"
-                android:layout_marginEnd="@dimen/dimen_32"
-                android:layout_marginBottom="@dimen/dimen_8"
-                android:background="#E1E1E1" />
-
-            <androidx.recyclerview.widget.RecyclerView
+            android:layout_height="match_parent">
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/dimen_32"
-                android:layout_marginEnd="@dimen/dimen_32"
-                tools:itemCount="1"
-                tools:listitem="@layout/item_view_requests" />
+                android:orientation="vertical"
+                tools:context=".view.HelpsFragment">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/dimen_32"
-                android:layout_marginTop="@dimen/dimen_16"
-                android:fontFamily="@font/google_sans_bold"
-                android:text="@string/closed_requests"
-                android:textColor="#006DC2"
-                android:textSize="@dimen/dimen_text_24" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/google_sans_bold"
+                    android:paddingLeft="@dimen/dimen_32"
+                    android:paddingTop="@dimen/dimen_32"
+                    android:paddingRight="@dimen/dimen_32"
+                    android:text="@string/my_help_requests"
+                    android:textColor="#006DC2"
+                    android:textSize="@dimen/dimen_text_32" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/dimen_1"
-                android:layout_marginStart="@dimen/dimen_32"
-                android:layout_marginEnd="@dimen/dimen_32"
-                android:layout_marginBottom="@dimen/dimen_8"
-                android:background="#E1E1E1" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/google_sans_medium"
+                    android:paddingLeft="@dimen/dimen_32"
+                    android:paddingRight="@dimen/dimen_32"
+                    android:text="@string/help_requests_and_history"
+                    android:textColor="#C6C6C6"
+                    android:textSize="@dimen/dimen_text_14" />
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/dimen_32"
-                android:layout_marginEnd="@dimen/dimen_32"
-                tools:itemCount="1"
-                tools:listitem="@layout/item_view_requests" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_32"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:fontFamily="@font/google_sans_bold"
+                    android:text="@string/open_requests"
+                    android:textColor="#006DC2"
+                    android:textSize="@dimen/dimen_text_24" />
 
-        </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1"
+                    android:layout_marginStart="@dimen/dimen_32"
+                    android:layout_marginEnd="@dimen/dimen_32"
+                    android:layout_marginBottom="@dimen/dimen_8"
+                    android:background="#E1E1E1" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_32"
+                    android:layout_marginEnd="@dimen/dimen_32"
+                    tools:itemCount="1"
+                    tools:listitem="@layout/item_view_requests" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_32"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:fontFamily="@font/google_sans_bold"
+                    android:text="@string/closed_requests"
+                    android:textColor="#006DC2"
+                    android:textSize="@dimen/dimen_text_24" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1"
+                    android:layout_marginStart="@dimen/dimen_32"
+                    android:layout_marginEnd="@dimen/dimen_32"
+                    android:layout_marginBottom="@dimen/dimen_8"
+                    android:background="#E1E1E1" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_32"
+                    android:layout_marginEnd="@dimen/dimen_32"
+                    tools:itemCount="1"
+                    tools:listitem="@layout/item_view_requests" />
+
+            </LinearLayout>
+        </ScrollView>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/add_requests"

@@ -1,28 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
-    <ScrollView
-        xmlns:android="http://schemas.android.com/apk/res/android"
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             tools:context=".view.HelpDescriptionActivity">
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:orientation="horizontal"
                 android:paddingLeft="@dimen/dimen_32"
                 android:paddingTop="@dimen/dimen_32"
-                android:paddingRight="@dimen/dimen_32"
-                android:orientation="horizontal">
+                android:paddingRight="@dimen/dimen_32">
+
                 <ImageView
                     android:id="@+id/back_btn"
                     android:layout_width="@dimen/dimen_24"
                     android:layout_height="@dimen/dimen_24"
                     android:layout_gravity="center_vertical"
-                    android:src="@drawable/ic_icon_back"/>
+                    android:src="@drawable/ic_icon_back" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -59,44 +63,50 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/dimen_24"
                     android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/dimen_24"
                     android:orientation="vertical">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/anonymous"
                         android:fontFamily="@font/google_sans_medium"
-                        android:textSize="@dimen/dimen_text_24"
-                        android:textColor="#006DC2"/>
+                        android:text="@string/anonymous"
+                        android:textColor="#006DC2"
+                        android:textSize="@dimen/dimen_text_24" />
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
+
                         <ImageView
                             android:layout_width="@dimen/dimen_16"
                             android:layout_height="@dimen/dimen_16"
                             android:layout_gravity="center_vertical"
-                            android:src="@drawable/ic_icon_location"/>
+                            android:src="@drawable/ic_icon_location" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dimen_4"
                             android:text="@string/within_1kms"
                             android:textColor="#8C929E"
-                            android:layout_marginStart="@dimen/dimen_4"
-                            android:textSize="@dimen/dimen_text_16"/>
+                            android:textSize="@dimen/dimen_text_16" />
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/google_sans_bold"
-                android:text="@string/help_description"
                 android:layout_marginStart="@dimen/dimen_32"
                 android:layout_marginTop="@dimen/dimen_16"
+                android:fontFamily="@font/google_sans_bold"
+                android:text="@string/help_description"
                 android:textColor="#006DC2"
                 android:textSize="@dimen/dimen_text_20" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -107,16 +117,18 @@
                 android:text="@string/bio_details"
                 android:textColor="#8C929E"
                 android:textSize="@dimen/dimen_text_16" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_32"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_32"
                 android:fontFamily="@font/google_sans_bold"
                 android:text="@string/specific_requirements"
-                android:layout_marginStart="@dimen/dimen_32"
-                android:layout_marginEnd="@dimen/dimen_32"
-                android:layout_marginTop="@dimen/dimen_16"
                 android:textColor="#006DC2"
                 android:textSize="@dimen/dimen_text_20" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -132,19 +144,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/google_sans_bold"
-                        android:text="@string/time"
                         android:layout_marginStart="@dimen/dimen_32"
                         android:layout_marginTop="@dimen/dimen_16"
+                        android:fontFamily="@font/google_sans_bold"
+                        android:text="@string/time"
                         android:textColor="#006DC2"
                         android:textSize="@dimen/dimen_text_20" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -156,20 +171,23 @@
                         android:textColor="#8C929E"
                         android:textSize="@dimen/dimen_text_16" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/google_sans_bold"
-                        android:text="@string/people_needed"
                         android:layout_marginStart="@dimen/dimen_12"
                         android:layout_marginTop="@dimen/dimen_16"
                         android:layout_marginEnd="@dimen/dimen_32"
+                        android:fontFamily="@font/google_sans_bold"
+                        android:text="@string/people_needed"
                         android:textColor="#006DC2"
                         android:textSize="@dimen/dimen_text_20" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -182,16 +200,18 @@
                         android:textSize="@dimen/dimen_text_16" />
                 </LinearLayout>
             </LinearLayout>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_32"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_32"
                 android:fontFamily="@font/google_sans_bold"
                 android:text="@string/address"
-                android:layout_marginStart="@dimen/dimen_32"
-                android:layout_marginEnd="@dimen/dimen_32"
-                android:layout_marginTop="@dimen/dimen_16"
                 android:textColor="#006DC2"
                 android:textSize="@dimen/dimen_text_20" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -202,26 +222,28 @@
                 android:text="@string/_2349_5a_anand_vihar_delhi"
                 android:textColor="#8C929E"
                 android:textSize="@dimen/dimen_text_16" />
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/get_help"
-                    android:layout_width="match_parent"
-                    android:layout_marginTop="@dimen/dimen_16"
-                    android:layout_height="@dimen/dimen_50"
-                    android:layout_marginStart="@dimen/dimen_32"
-                    android:layout_marginEnd="@dimen/dimen_32"
-                    android:text="@string/volunteer"
-                    android:textAllCaps="false"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/by_clicking_you_agree_to_the_terms_and_conditions_of_this_app"
-                    android:textColor="#8C929E"
-                    android:fontFamily="@font/google_sans_medium"
-                    android:textSize="@dimen/dimen_text_16"
-                    android:layout_marginStart="@dimen/dimen_32"
-                    android:layout_marginEnd="@dimen/dimen_32"
-                    android:layout_marginTop="@dimen/dimen_4"
-                    android:layout_below="@id/get_help"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/get_help"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_marginStart="@dimen/dimen_32"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_32"
+                android:text="@string/volunteer"
+                android:textAllCaps="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/get_help"
+                android:layout_marginStart="@dimen/dimen_32"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:layout_marginEnd="@dimen/dimen_32"
+                android:fontFamily="@font/google_sans_medium"
+                android:text="@string/by_clicking_you_agree_to_the_terms_and_conditions_of_this_app"
+                android:textColor="#8C929E"
+                android:textSize="@dimen/dimen_text_16" />
         </LinearLayout>
     </ScrollView>
 </layout>
