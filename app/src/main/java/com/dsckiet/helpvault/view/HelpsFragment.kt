@@ -1,5 +1,6 @@
 package com.dsckiet.helpvault.view
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -22,7 +23,7 @@ class HelpsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.addRequests.setOnClickListener {
-            it.findNavController().navigate(R.id.action_helpsFragment_to_helpRequestsFragment)
+            startActivity(Intent(requireContext(), HelpRequestsActivity::class.java))
         }
     }
 }

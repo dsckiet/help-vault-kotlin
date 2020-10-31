@@ -36,5 +36,14 @@
     <string name="get_volunteers">Get Volunteers</string>
     <string name="give_a_brief_description_about_your_help">Give a brief description about your help</string>
     <string name="title">Title</string>
-    <string name="this_will_be_visible_to_others">This will be visible to others</string>
+    <string name="title_helper">This will be visible to others</string>
+    <string name="title_hint">A suitable title for your help</string>
+    <string name="desc_help">Give a brief description for your help</string>
+    <string name="description">Description</string>
+    <string name="volunteers_needed">Volunteers needed</string>
+    <string name="time">Time</string>
+    <string name="for_kids">For kids</string>
+    <string name="reveal_identity">Reveal Identity</string>
+    <string name="get_help">Get Help</string>
+    <string name="by_clicking_you_agree_to_the_terms_and_conditions_of_this_app">By clicking, you agree to the Terms and Conditions of this app</string>
 </resources>
