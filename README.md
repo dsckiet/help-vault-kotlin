@@ -1,7 +1,6 @@
 <p align="left">
 	<img width="240" src="https://raw.githubusercontent.com/dsckiet/resources/master/dsckiet-logo.png" />
 	<h2 align="left"> Help Vault </h2>
-	<h4 align="left"> **This Project is NOT open for contributions outside of DSC KIET Organisation. <h4>
 </p>
 
 ---
