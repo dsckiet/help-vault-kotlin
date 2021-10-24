@@ -24,14 +24,16 @@
                     android:layout_height="@dimen/dimen_94"
                     android:layout_gravity="center_vertical"
                     android:layout_marginStart="@dimen/dimen_32"
-                    android:src="@drawable/ic_profile_placeholder" />
+                    android:src="@drawable/ic_profile_placeholder"
+                    android:layout_marginLeft="@dimen/dimen_32" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginStart="@dimen/dimen_24"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/dimen_24">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -47,7 +49,7 @@
                         android:fontFamily="@font/google_sans_bold"
                         android:text="@string/art_director_at_mx_studios"
                         android:textColor="#8C929E"
-                        android:textSize="@dimen/dimen_text_16" />
+                        android:textSize="@dimen/dimen_text_14" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -67,7 +69,8 @@
                             android:layout_height="@dimen/dimen_16"
                             android:layout_gravity="center_vertical"
                             android:layout_marginStart="@dimen/dimen_4"
-                            android:src="@drawable/ic_icon_star" />
+                            android:src="@drawable/ic_icon_star"
+                            android:layout_marginLeft="@dimen/dimen_4" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -81,7 +84,8 @@
                 android:fontFamily="@font/google_sans_bold"
                 android:text="@string/help_wanted"
                 android:textColor="#006DC2"
-                android:textSize="@dimen/dimen_text_24" />
+                android:textSize="@dimen/dimen_text_24"
+                android:layout_marginLeft="@dimen/dimen_32" />
 
             <View
                 android:layout_width="match_parent"
@@ -105,7 +109,8 @@
                 android:layout_marginStart="@dimen/dimen_32"
                 android:layout_marginTop="@dimen/dimen_16"
                 app:strokeColor="#006DC2"
-                app:strokeWidth="@dimen/dimen_1">
+                app:strokeWidth="@dimen/dimen_1"
+                android:layout_marginLeft="@dimen/dimen_32">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -127,7 +132,8 @@
                 android:fontFamily="@font/google_sans_bold"
                 android:text="@string/recently_helped"
                 android:textColor="#006DC2"
-                android:textSize="@dimen/dimen_text_24" />
+                android:textSize="@dimen/dimen_text_24"
+                android:layout_marginLeft="@dimen/dimen_32" />
 
             <View
                 android:layout_width="match_parent"
@@ -151,7 +157,8 @@
                 android:layout_marginStart="@dimen/dimen_32"
                 android:layout_marginTop="@dimen/dimen_16"
                 app:strokeColor="#006DC2"
-                app:strokeWidth="@dimen/dimen_1">
+                app:strokeWidth="@dimen/dimen_1"
+                android:layout_marginLeft="@dimen/dimen_32">
 
                 <TextView
                     android:layout_width="wrap_content"

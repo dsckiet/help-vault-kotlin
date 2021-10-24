@@ -102,7 +102,7 @@
 
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btn_sign_up"
+                    android:id="@+id/btn_log_in"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginTop="12dp"
@@ -130,6 +130,7 @@
                         android:textSize="14sp" />
 
                     <TextView
+                        android:id="@+id/signUpText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"

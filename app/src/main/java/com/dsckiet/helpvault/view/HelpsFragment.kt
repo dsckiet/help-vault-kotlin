@@ -23,7 +23,7 @@ class HelpsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.addRequests.setOnClickListener {
-            startActivity(Intent(requireContext(), HelpRequestsActivity::class.java))
+            startActivity(Intent(activity, HelpRequestsActivity::class.java))
         }
     }
 }

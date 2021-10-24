@@ -35,7 +35,8 @@
                     android:fontFamily="@font/google_sans_bold"
                     android:text="@string/get_volunteers"
                     android:textColor="#006DC2"
-                    android:textSize="@dimen/dimen_text_32" />
+                    android:textSize="@dimen/dimen_text_32"
+                    android:layout_marginLeft="@dimen/dimen_8" />
             </LinearLayout>
 
             <TextView
@@ -121,7 +122,8 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true">
 
                     <ImageView
                         android:layout_width="@dimen/dimen_24"
@@ -135,13 +137,17 @@
                         android:layout_height="@dimen/dimen_40"
                         android:layout_marginStart="@dimen/dimen_12"
                         app:boxStrokeColor="#424563"
-                        app:boxStrokeWidth="@dimen/dimen_1">
+                        app:boxStrokeWidth="@dimen/dimen_1"
+                        android:layout_marginLeft="@dimen/dimen_12">
 
                         <com.google.android.material.textfield.TextInputEditText
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:inputType="number"
                             android:textAlignment="center"
-                            android:textSize="@dimen/dimen_text_12" />
+                            android:textSize="@dimen/dimen_text_12"
+                            android:gravity="center_horizontal" />
                     </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
             </RelativeLayout>
@@ -167,7 +173,8 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true">
 
                     <ImageView
                         android:layout_width="@dimen/dimen_24"
@@ -181,13 +188,16 @@
                         android:layout_height="@dimen/dimen_40"
                         android:layout_marginStart="@dimen/dimen_12"
                         app:boxStrokeColor="#424563"
-                        app:boxStrokeWidth="@dimen/dimen_1">
+                        app:boxStrokeWidth="@dimen/dimen_1"
+                        android:layout_marginLeft="@dimen/dimen_12">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:inputType="time"
                             android:textAlignment="center"
-                            android:textSize="@dimen/dimen_text_12" />
+                            android:textSize="@dimen/dimen_text_12"
+                            android:gravity="center_horizontal" />
                     </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
             </RelativeLayout>
@@ -212,7 +222,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
-                    app:thumbTint="#006DC2" />
+                    app:thumbTint="#006DC2"
+                    android:layout_alignParentRight="true" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -235,7 +246,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
-                    app:thumbTint="#006DC2" />
+                    app:thumbTint="#006DC2"
+                    android:layout_alignParentRight="true" />
             </RelativeLayout>
 
             <com.google.android.material.button.MaterialButton

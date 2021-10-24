@@ -47,7 +47,8 @@
                     android:fontFamily="@font/google_sans_bold"
                     android:text="@string/open_requests"
                     android:textColor="#006DC2"
-                    android:textSize="@dimen/dimen_text_24" />
+                    android:textSize="@dimen/dimen_text_24"
+                    android:layout_marginLeft="@dimen/dimen_32" />
 
                 <View
                     android:layout_width="match_parent"
@@ -73,7 +74,8 @@
                     android:fontFamily="@font/google_sans_bold"
                     android:text="@string/closed_requests"
                     android:textColor="#006DC2"
-                    android:textSize="@dimen/dimen_text_24" />
+                    android:textSize="@dimen/dimen_text_24"
+                    android:layout_marginLeft="@dimen/dimen_32" />
 
                 <View
                     android:layout_width="match_parent"
