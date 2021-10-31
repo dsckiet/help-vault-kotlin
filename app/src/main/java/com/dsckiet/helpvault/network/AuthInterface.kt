@@ -10,12 +10,11 @@ import retrofit2.converter.moshi.MoshiConverterFactory
 import retrofit2.http.*
 
 
-const val base_url: String = "https://help-vault-deploy.herokuapp.com/"
+const val base_url: String = "https://help-vault-deploy.herokuapp.com/api/auth/"
 
 interface AuthInterface {
 
-    @Headers("Content-Type:application/x-www-form-urlencoded")
-    @POST("api/auth/signin")
+    @POST("signin")
     fun login(@Body response : UserLogin): Call<LoginResponse>
 }
 

@@ -41,12 +41,19 @@ class LoginActivity : AppCompatActivity() {
                     binding.password.text.toString()
                 ).observe(this , Observer {
                     if(it != null) {
-                        val token = it.data.token
-                        sessionManager.saveAuthToken(token)
-                        val intent = Intent(this, MainActivity::class.java)
-                        startActivity(intent)
-                        finish()
-                    }
+                        if(it.data != null ){
+                            val token = it.data.token
+                            sessionManager.saveAuthToken(token)
+                            val intent = Intent(this, MainActivity::class.java)
+                            Toast.makeText(this,it.data.msg,Toast.LENGTH_SHORT).show()
+                            startActivity(intent)
+                            finish()
+                        }else{
+                            Toast.makeText(this,it.message,Toast.LENGTH_SHORT).show()
+                        }
+                    }/*else{
+                        Toast.makeText(this,"Something Went Wrong",Toast.LENGTH_SHORT).show()
+                    }*/
                 })
             }
         }
