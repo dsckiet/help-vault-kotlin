@@ -2,30 +2,33 @@ package com.dsckiet.helpvault.network
 
 import com.dsckiet.helpvault.dataClass.LoginResponse
 import com.dsckiet.helpvault.dataClass.UserLogin
+import com.squareup.moshi.Moshi
+import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
-import retrofit2.http.Body
-import retrofit2.http.GET
-import retrofit2.http.POST
-import retrofit2.http.Query
+import retrofit2.http.*
 
 
 const val base_url: String = "https://help-vault-deploy.herokuapp.com/"
 
 interface AuthInterface {
 
+    @Headers("Content-Type:application/x-www-form-urlencoded")
     @POST("api/auth/signin")
-    fun login(@Body request : UserLogin): Call<LoginResponse>
+    fun login(@Body response : UserLogin): Call<LoginResponse>
 }
 
 object LoginService{
      val loginInstance : AuthInterface
 
     init {
+        val moshi = Moshi.Builder()
+            .add(KotlinJsonAdapterFactory())
+            .build()
         val retrofit = Retrofit.Builder()
             .baseUrl(base_url)
-            .addConverterFactory(MoshiConverterFactory.create())
+            .addConverterFactory(MoshiConverterFactory.create(moshi))
             .build()
         loginInstance = retrofit.create(AuthInterface::class.java)
     }
