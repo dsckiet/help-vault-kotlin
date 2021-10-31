@@ -1,7 +1,9 @@
 package com.dsckiet.helpvault.dataClass
 
 data class LoginResponse(
-    val data: Data,
+
+    val message: String,
     val error: Boolean,
-    val message: String
+    val data: Data
+
 )

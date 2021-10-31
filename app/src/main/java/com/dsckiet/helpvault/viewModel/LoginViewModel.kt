@@ -21,6 +21,7 @@ class LoginViewModel : ViewModel() {
         loginResponse.enqueue(object : Callback<LoginResponse>{
             override fun onResponse(call: Call<LoginResponse>, response: Response<LoginResponse>) {
                loginToken.value =  response.body()
+                Log.d("response", response.body().toString())
             }
 
             @SuppressLint("LogNotTimber")
